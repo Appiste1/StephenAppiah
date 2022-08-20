@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset ="utf-8">   
+<meta name="viewport" content="width=device, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"  crossorigin="anonymous" referrerpolicy="no-referrer" />      
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">  
+<style>
+html {
+scroll-behavior: smooth;
+    
+}
+    .container{
+        margin: 0px;
+        
+    }
+    #section1{
+        height:700px;
+        background-color:none;
+        margin: 0;
+    }
+   #section2{
+        padding-bottom: 50px;
+        height:760px;
+        background-color: rgb(0, 16, 4);
+    }    
+    
+    #section3{
+        height:300px;
+        background-color: black; 
+    }
+
+    
+/* Create a space for picture*/
+    .picholder{
+        height:450px;
+        width:100%;
+        padding :30px;
+        background-color:none; 
+    }
+
+    *{
+        box-sizing:border-box;
+    }    
+    
+    .row{
+    margin: 8px - 16px;
+    }
+    
+/* Add padding Between es colunm */
+    .row, 
+    .row>.colunm {
+        padding:8px;
+    }
+    
+/* create 4 equal colunms that float next to ea other*/
+    .colunm{
+        float:left;
+        width:33.3%;
+        height:150px;
+        
+    }
+
+/* clear float after rows*/
+    .row:after{
+        content: "";
+        display:table;
+        clear: both;  
+    }
+    
+/*content*/
+    .content{
+    background-color: black;
+    padding:10px; 
+    min-height: 55vh;
+    border-radius: 10px;
+        box-shadow: 0 4px 15px 0 rgba(255, 255, 255, 0.1), 0 6px 20px 0 rgba(255, 255, 255, 0.1);
+    }
+    .content p{
+     color:whitesmoke
+    }
+    
+/* Responsivve Layout-make aa three-column-layout*/
+    @media (max-width:980){
+        .colunm{
+            width: 50%;
+            
+        }}
+    
+    h3 {
+        padding-top:20px;
+    }
+    
+    .Previous{
+        background-color:black;
+        color:white;
+        padding: 8px 16px;
+    }
+        
+
+    .next{
+        background-color:black;
+        color: white;
+        padding: 8px 16px;
+    }
+    
+    }
+    /*div.gallary img{
+        width:100%;
+        height: auto;
+    }*/
+    div.gallary:hover{
+        border:1px solid #777;
+    }
+    /* contact*/
+    .contact{
+            text-align:center;
+            padding:15px;
+    }
+ /*video*/
+    .back-video{
+        position:fixed; 
+        right:0;
+        bottom:0;
+        z-index: -1;
+        height: ;       
+    }
+    @media (min-aspect-ratio: 16/9){
+        .back-vdeo{
+            width:100%;
+            height:auto; 
+        } }
+    @media (max-aspect-ratio: 16/9){
+        .back-vdeo{
+            width:auto;
+            height:100%; 
+        }}
+    
+  a:hover{
+        color:black;
+      background-color: forestgreen;
+      transition: all .5s
+    }
+    
+a {
+        color:forestgreen;
+    }
+</style>
+</head>
+    
+<body class="container">
+   
+    
+<div class="main" id="section1">
+    
+<nav>
+  <input type="checkbox" id="check">
+     <label for="check" class="checkbth">
+         <i class="fas fa-bars"></i>  
+     </label>
+  <label class="logo">S.S Appiah </label>  
+     <ul>
+         <li><a class="active" href="mailto:appiah.stephen1971@gmail.com"><i class="fa-solid fa-envelope"></i>  Email Me</a></li>
+         <li><a href="https://www.linkedin.com/in/stephen-ato-appiah-a99873162"><i class="fa-brands fa-linkedin"></i>  LinkedIn</a></li>
+         <li><a href="https://docs.google.com/document/d/1PSV0R4rmG2FRuThVzi71rBIJUWYiQI-v/edit"><i class="fa-solid fa-file"></i>  Curriculum Vitae</a></li>
+         <li><a href="#section2"> <i class="fa-solid fa-image"></i>  Project Gallary </a></li>
+    
+     </ul>
+</nav>  
+    
+   <br/>  
+ <div class="picholder" style="text-align:center">
+     
+     <video id="background-video" autoplay loop muted poster="">
+     <source src="video/video1.mp4" type="video/mp4">
+     </video>
+     <br/><br/>
+    <img src="Picture.png" style="border-radius:50%;" width="180" class="center"/>
+    <br/>
+    
+    <p style="font-family:sans-serif; color:silver; font-size: 20px; font-weight: 30px"> 
+    A Graduate Student at Youngstown State University, Ohio <br/>
+    Frontend Web and Software developer<br/>
+    Love to play piano, guitar and sing.  
+    </p> 
+<br/><br/><br/><br/><br/><br/> 
+<br/><br/><br/><br/> <br/> 
+    <a href="#section2" class="next" style="float:right;">Next <i class="fa-solid fa-angles-down" style="padding-left: 5px;"></i></a>
+</div>
+</div>
+
+   
+<div class="main" id="section2">
+    <h3 style="text-align:center; color:silver; font-size: 20px" >Project Gallary</h3>
+    <div class ="row" style="min-height: 55vh !important">
+        <div class="colunm" style="min-height: 100%">
+            <div class="gallary">
+            <div class="content">
+                <a target="_blank" href="image2/rob1.png" ></a>
+                <img src="image2/rob1.png" alt ="people" style="width:100%">
+                <p style="font-family:sans-serif; color:silver; font-size: 16px: font-weight: bold;">
+                    CodeMax20 Projecct  </p>
+             <p style="font-family:sans-serif; color:silver; font-size: 15px">        
+                 <br/>   
+                I worked with Takoradi Innovation Center to train about 50 kids and youths during CodeMax20 Project. I also develop website and softwares for oprganizations. 
+                 </p><br/> <br><br/> <a href="ticgallary.html" style="padding: 5px 16px;">see more...</a> 
+   </div>
+            </div>
+<br><br/><br/>
+            <a href="#section1" class="Previous" ><i class="fa-solid fa-angles-up" style="padding-right: 5px;"></i>Previous</a> 
+ 
+  </div>
+
+        
+           <div class="colunm" style="min-height: 100%">
+               <div class="gallary">
+            <div class="content">
+                <a target="_blank" href="image2/baker1.JPG" ></a>
+                <img src="image2/baker1.JPG" alt ="group_picture" style="width:100%" height="">
+                <p style="font-family:sans-serif; color:silver; font-size: 16px font-weight: bold;"> Quality Control Specialist at Baker Hughes </p> <br/>  
+                   <p style="font-family:sans-serif; color:silver; font-size: 15px"> 
+                   Worked as QC specialist at Baker Hughes to ensure total quality achieving zero non-productive time and good performance of 98%. 
+                </p><br/><br/><br/>
+         <a href="Bakergallary.html" class="" style="padding: 5px 16px; ">see more...</a> 
+</div>
+</div>
+</div>
+
+             <div class="colunm" style="min-height: 100%"style="min-height: 100%">
+            <div class="gallary">
+            <div class="content">
+                <a target="_blank" href="image2/ysu2.png"></a>
+                <img src="image2/ysu2.png" alt ="people" style="width:100%" height="">
+                <p style="font-family:sans-serif; color:silver; font-size:16px font-weight: bold;">YSU ADMETE Program </p><br></br>
+                <p style="font-family:sans-serif; color:silver; font-size:15px">
+                   Work as a graduate research assistance for YSU  and work on the ADMETE Program as well. 
+                </p> <br/> <br/> <br/>   
+           <a href="ysugallary.html"  style="padding: 5px 16px; ">see more...</a>  
+ </div>   
+ </div>   
+</div>
+</div>
+</div>
+          
+<div class="main" id="section3">
+    <br></br>
+    <div class="contact">
+     <h2 style="floct:center; color:silver; font: Times New Roman; padding-bottom: 20px">Contact @</h2> 
+          
+    <p style="floct:center; color:silver;" >
+       Address: 815 Ohio Ave, Youngstown-Ohio   <br></br>  
+       Telephhone: +1 330 623 5708 <br></br>
+       Email: appiah.stephen1971@gmail.com <br></br>    
+      Skype: <a href="https://join.skype.com/invite/qnlIxD2dbhqd">https://join.skype.com/invite/qnlIxD2dbhqd</a>
+        </p>    
+ </div>
+ </div>
+    
+</body>    
+<html>

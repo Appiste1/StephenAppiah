@@ -1,0 +1,167 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Mystyle.css"/>
+</head>
+    
+<body style="margin: 0px; background: #0e0e0e; height:100% opacity:0.4">
+<br/>
+<a href= "index.html" style="color:whitesmoke; padding-left:25px; font-size:20px; text-decoration:none">X</a>
+<br/>
+
+<div class="slideshow-container">
+    
+
+    <div class="mySlides fade">
+    <div class ="row">
+        <div class="colunm">
+            <div class="gallary">
+            <div class="content">
+                <div class="numbertext">1 / 7</div>
+                 <img src="image2/rob1.png" alt ="people" style="width:100%; height: 500px">
+                <p style="text-align: center; font-family:sans-serif;">Codemax20 robotioc session, 2020</p>
+ 
+</div>
+</div>
+</div>
+</div>
+</div>
+    
+    
+<div class="mySlides fade">
+    <div class ="row">
+        <div class="colunm">
+            <div class="gallary">
+            <div class="content">
+                <div class="numbertext">2 / 7</div>
+                 <img src="image2/codemax2.JPG" alt ="people" style="width:100%; height: 500px">
+                <p style="text-align: center; font-family:sans-serif;"> Codemax20 coding session, 2020</p>
+ 
+</div>
+</div>
+</div>
+</div>
+</div>
+    
+<div class="mySlides fade">
+    <div class ="row">
+        <div class="colunm">
+            <div class="gallary">
+            <div class="content">
+                <div class="numbertext">3 / 7</div>
+                 <img src="image2/threeofus.JPG" alt ="people" style="width:100%; height: 500px">
+                <p style="text-align: center; font-family:sans-serif;"> Codemax20 trainers, 2020</p>
+ 
+</div>
+</div>
+</div>
+</div>
+</div>
+    
+<div class="mySlides fade">
+    <div class ="row">
+        <div class="colunm">
+            <div class="gallary">
+            <div class="content">
+                <div class="numbertext">4 / 7</div>
+                 <img src="image2/codemax3.JPG" alt ="people" style="width:100%; height: 500px">
+                <p style="text-align: center; font-family:sans-serif;"> Codemax20, team with participant, 2020</p>
+ 
+</div>
+</div>
+</div>
+</div>
+</div>
+    
+<div class="mySlides fade">
+    <div class ="row">
+        <div class="colunm">
+            <div class="gallary">
+            <div class="content">
+                <div class="numbertext">5 / 7</div>
+                 <img src="image2/ticPIC1.jpg" alt ="people" style="width:100%; height: 500px">
+                <p style="text-align: center; font-family:sans-serif;"> Picture with interns from University of Cape Coast (Cape Coast-Central Region) and Takoradi Techniocal University (Takoradi-Western Region)</p>
+ 
+</div>
+</div>
+</div>
+</div>
+</div>
+    
+    
+<div class="mySlides fade">
+    <div class ="row">
+        <div class="colunm">
+            <div class="gallary">
+            <div class="content">
+                <div class="numbertext">6 / 7</div>
+                 <img src="image2/SMS1.jpg" alt ="people" style="width:100%; height: 500px">
+                <p style="text-align: center; font-family:sans-serif;"> Kids in Coding program at The Sanctuary Montessori,2018.</p>
+ 
+</div>
+</div>
+</div>
+</div>
+</div>
+    
+    
+<div class="mySlides fade">
+    <div class ="row">
+        <div class="colunm">
+            <div class="gallary">
+            <div class="content">
+                <div class="numbertext">7 / 7</div>
+                 <img src="image2/appinpic1.jpg" alt ="people" style="width:100%; height: 500px">
+                <p style="text-align: center; font-family:sans-serif;">  Interns performing coding project, 2018</p>
+ 
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<!--<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div> -->
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html> 
